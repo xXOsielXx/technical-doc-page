@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="title">Python Docs</h1>
+      <button id="hamburguer-btn" class="open-menu">
+        <div id="line-1" class="hamburguer-btn__line"></div>
+        <div id="line-2" class="hamburguer-btn__line"></div>
+        <div id="line-3" class="hamburguer-btn__line"></div>
+      </button>
+    </header>
+    <nav id="nav-bar">
+      <ul id="nav-list">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What’s_New_In_Python_3.12">What’s New In Python 3.12</a></li>
+        <li><a class="nav-link" href="#Installation">Installation</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#References">References</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>Python is a popular high-level, interpreted, and general-purpose dynamic programming language that was created by Guido van Rossum and released in 1991. </p>
+          <p>It is used for web development, software development, mathematics, and system scripting. Python can be treated in a procedural way, an object-oriented way, or a functional way.</p>
+          <p>The most recent major version of Python is Python 3, which is used in most tutorials and courses. Python syntax is designed for readability and uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses. Python relies on indentation, using whitespace, to define scope, such as the scope of loops, functions, and classes.</p>
+          <p>Python is easy to learn and use, making it a popular choice for beginners and experienced programmers alike. There are many resources available for learning Python, including online tutorials, courses, and documentation.</p>
+        <article>
+      </section>
+      <section class="main-section" id="What’s_New_In_Python_3.12">
+        <header>What’s New In Python 3.12</header>
+        <article>
+          <p>Python 3.12 is the latest stable release of the Python programming language, with a mix of changes to the language and the standard library. The library changes focus on cleaning up deprecated APIs, usability, and correctness. Of note, the distutils package has been removed from the standard library. Filesystem support in os and pathlib has seen a number of improvements, and several modules have better performance.</p>
+          <p>The language changes focus on usability, as f-strings have had many limitations removed and ‘Did you mean …’ suggestions continue to improve. The new type parameter syntax and type statement improve ergonomics for using generic types and type aliases with static type checkers.</p>
+          <p>This article doesn’t attempt to provide a complete specification of all new features, but instead gives a convenient overview. For full details, you should refer to the documentation, such as the Library Reference and Language Reference. If you want to understand the complete implementation and design rationale for a change, refer to the PEP for a particular new feature; but note that PEPs usually are not kept up-to-date once a feature has been fully implemented.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Installation">
+        <header>Installation</header>
+        <article>
+          <h2>Windows</h2>
+          <ol>
+            <li>Visit the <a href="https://www.python.org/downloads/windows" target="_blank">Windows downloads page in the Python website</a> and download the installer based on your local machine's hardware architecture.</li>
+            <li>Once downloaded, run the installer and follow the installation instruction</li>
+            <li>
+              When the installation finishes, run the code below in order to know your python version (omitting the "$" symbol)
+              <code class="console-code">$ python --version</code>
+            </li>
+          </ol>
+        </article>
+        <article>
+          <h2>Mac OS X</h2>
+          <ol>
+            <li>Visit the <a href="https://www.python.org/downloads/mac-osx" target="_blank">Mac OS X downloads page in the Python website</a> and download the installer based on your local machine's hardware architecture.</li>
+            <li>Once downloaded, run the installer and follow the installation instruction</li>
+            <li>
+              When the installation finishes, run the code below in order to know your python version (omitting the "$" symbol)
+              <code class="console-code">$ python --version</code>
+            </li>
+          </ol>
+        </article>
+        <article>
+          <h2>GNU/Linux</h2>
+          <ol>
+            <li>
+              Most of the Linux Distribution have python preinstalled in their system. In order to know what version of it you have, run the code below (omitting the "$" symbol)
+              <code class="console-code">$ which python3</code>
+            </li>
+            <li>
+              Anyway, you can install any version of python by running the following code (omitting the "$" symbol)
+              <code class="console-code">$ sudo apt install python</code>
+              <code class="console-code">$ sudo apt install python3</code>
+              Important: Make sure you install the correct python version, python2 or python3 that are very diferents, bear in mind.
+            </li>
+            <li>
+              When the installation finishes, run the code below in order to know your python version (omitting the "$" symbol)
+              <code class="console-code">$ python --version</code>
+              <code class="console-code">$ python3 --version</code>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+          <p>To get started with Python, let's write your first program. The "Hello World" program. So, first of all, open your interpreter with the line of code below</p>
+          <code class="console-code">$ python</code>
+          <p>Already with the interpreter active, run the following line of code</p>
+          <code class="console-code">>>> print("Hello World")</code>
+          <p>That's all, you have written your first program with python</p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>Python variables are symbolic names that serve as references or pointers to objects in a program</p>
+          <p>They are containers for storing data values and can be used to store various types of data, such as integers, strings, and more complex objects</p>
+          <p>Python does not require variable declaration, and a variable is created the moment you first assign a value to it</p>
+          <p>Here are some key points about Python variables:</p>
+          <ul>
+            <li><strong>Creation</strong>: A variable is created when you first assign a value to it</li>
+            <li><strong>Data-type</strong>: Python variables do not need to be declared with any particular type, and they can even change type after they have been set</li>
+            <li><strong>Case-sensitive</strong>: Variable names are case-sensitive, meaning that name, Name, and NAME are considered different variables</li>
+            <li><strong>Rules</strong>: Python variable names must start with a letter or underscore, cannot start with a number, and can only contain alpha-numeric characters and underscores</li>
+            <li><strong>Scope</strong>: Variables in Python have a global scope by default, meaning they can be accessed from anywhere in the program. However, you can create local variables within functions to limit their scope</li>
+          </ul>
+          <p>To create a variable in Python, simply assign a value to a name:</p>
+          <code class="text-editor-code">
+            x = 5 <br>
+            y = "John"
+          </code>
+          <p>You can also change the value of a variable during program execution:</p>
+          <code class="text-editor-code">
+            x = 5 <br>
+            x = 10 <br>
+            print(x)  # Output: 10
+          </code>
+          <p>To get the data type of a variable, you can use the type() function:</p>
+          <code class="text-editor-code">
+            x = 5 <br>
+            print(type(x))  # Output: class 'int'
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+          <p>In Python, constants are typically represented using variables with names written in all capital letters as a naming convention, but Python does not have a dedicated constant type.</p>
+          <p>Constants are used to store values that are not meant to be changed during the execution of a program. While the language does not prevent reassignment of constants, the naming convention serves as a signal to other programmers that the variable should be treated as a constant.</p>
+          <p>Here are some key points about Python constants in relation to variables:</p>
+          <ul>
+            <li><strong>Definition</strong>: Python does not have a dedicated syntax for defining constants. Instead, constants are usually represented using variables with names in all capital letters as a naming convention</li>
+            <li><strong>Usage</strong>: Constants are typically declared and assigned in a separate module or file, and then imported into the main file where they are used</li>
+            <li><strong>Convention</strong>: The use of all capital letters for the names of constants is a convention to distinguish them from regular variables, but it does not actually prevent reassignment</li>
+            <li><strong>Purpose</strong>: Constants are used to improve code readability, maintainability, and to signal the intended immutability of certain values</li>
+          </ul>
+          <p>Here is an example of how to create a constant in Python:</p>
+          <code class="text-editor-code">
+            # Declare constants in a separate file and name that file with the .py extension <br>
+            # Constants.py file <br>
+            SPEED_OF_LIGHT_IN_VACUUM = 299792458 <br>
+            PI = 3.141592653589793 <br>
+            LUMINOUS_EFFICACY = 683 <br>
+            <br>
+            # Example.py file <br>
+            import Constants <br>
+            <br>
+            print(Constants.SPEED_OF_LIGHT_IN_VACUUM) <br>
+            print(Constants.PI) <br>
+            print(Constants.LUMINOUS_EFFICACY) <br>
+          </code>
+          <p>In the above example, we have created the Constants.py file which is called the Constants module. Then, we declared some constant values. After that, we create another Python file which is an Example.py file and in that file, we imported the Constants module using the import keyword. And finally, accessed the constant values. The intention of using capital letters is to tell other programmers that the variable should be treated as a constant</p>
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>Python has several built-in data types, including numeric, sequence, boolean, set, dictionary, and binary types. Here is a brief overview of each:</p>
+          <ul>
+            <li><strong>Numeric Types</strong>: Python supports integers, floating-point numbers, and complex numbers. These are used to represent numeric data.</li>
+            <li><strong>Sequence Types</strong>: Python has several sequence types, including lists, tuples, and ranges. These are used to store collections of items.</li>
+            <li><strong>Boolean Type</strong>: The boolean type is used to represent truth values, True and False.</li>
+            <li><strong>Set Types</strong>: Python includes set and frozenset types, which are used to store unique elements.</li>
+            <li><strong>Dictionary Type</strong>: Dictionaries are used to store key-value pairs.</li>
+            <li><strong>Binary Types</strong>: Python includes bytes, bytearray, and memoryview, which are used to store binary data.</li>
+          </ul>
+          <p>These data types are used to define the type of a variable and the kind of value it can hold. Python variables are not declared with a specific data type and can change types easily during program execution</p>
+        </article>
+      </section>
+      <section class="main-section" id="Conditionals">
+        <header>Conditionals</header>
+        <article>
+          <p>Conditional statements are an essential part of programming in Python. They allow you to make decisions based on the values of variables or the result of comparisons. The primary conditional statements in Python are the "if," "else," and "elif" statements.</p>
+          <p>Here are some key points about Python conditionals:</p>
+          <ul>
+            <li><strong>if Statement</strong>: The <strong>if</strong> statement is used to execute a block of code if a certain condition is true.</li>
+            <li><strong>if-else Statement</strong>: The <strong>if-else</strong> statement is used to execute one block of code if a condition is true, and another block of code if the condition is false.</li>
+            <li><strong>if-elif-else Statement</strong>: The <strong>if-elif-else</strong> statement is used to check multiple conditions in sequence, and execute different code blocks depending on which condition is true.</li>
+            <li><strong>Conditional Expression</strong>: The conditional expression is a compact way to evaluate a condition and return a value based on the result.</li>
+          </ul>
+          <p>These conditional statements allow for the execution of different blocks of code based on the value of variables. Remember to use proper indentation and syntax when writing conditional statements</p>
+        </article>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article>
+          <p>A loop is a control structure that repeats a block of code as long as a certain condition is met.</p>
+          <p>There are two main types of loops in Python:</p>
+          <ul>
+            <li>
+              <strong>For Loop</strong>: 
+              The "for" loop is used to iterate over a sequence of elements, such as a list, tuple, dictionary, set, or string. It iterates over each item in the sequence and executes the block of code for each item. Here's an example:
+              <code class="text-editor-code">
+                fruits = ["apple", "banana", "cherry"] <br>
+                for fruit in fruits: <br>
+                    print(fruit)
+              </code>
+            </li>
+            <li>
+              <strong>While Loop</strong>: 
+              The "while" loop is used to execute a block of statements repeatedly until a given condition is no longer satisfied. It continues to execute as long as the condition remains true. Here's an example:
+              <code class="text-editor-code">
+                count = 0 <br>
+                while count < 5: <br>
+                    print(count) <br>
+                    count += 1
+              </code>
+            </li>
+          </ul>
+          <p>Both types of loops can be controlled using loop control statements such as "break" and "continue" to alter the flow of the loop based on certain conditions. Additionally, nested loops, where a loop is present inside another loop, can also be used for more complex iterations.</p>
+          <p>These loops are fundamental for repetitive execution of code and iteration over data structures in Python</p>
+        </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+          <p>In Python, a function is a block of code that performs a specific task. It is a reusable piece of code that can be called from other parts of a program. Functions can be used to divide a complex problem into smaller chunks, making the program easy to understand and reuse.</p>
+          <p>There are two types of functions in Python: standard library functions and user-defined functions. Standard library functions are built-in functions in Python that are available to use, while user-defined functions can be created based on specific requirements.</p>
+          <p>To define a function in Python, the def keyword is used, followed by the function name and any arguments that the function takes. The function body is then defined, and the function can optionally return a value. Functions can be called from other parts of the program by using the function name and passing any required arguments.</p>
+          <p>Python also has several built-in functions and types that are always available, such as abs(), len(), and print(). These built-in functions can be used to perform common tasks without having to write custom code.</p>
+          <p>Variables are also an essential part of programming in Python. They are like containers that hold values and can be used to store anything from simple data types like integers and strings to more complex objects. Variables are useful because they can help keep track of different pieces of information in a program.</p>
+          <p>Overall, functions and variables are fundamental concepts in Python programming that are used to create efficient and reusable code</p>
+        </article>
+      </section>
+      <section class="main-section" id="References">
+        <header>References</header>
+        <p>Most of the information presented here is taken from the following sites: </p>
+        <ul>
+          <li><a href="https://docs.python.org/" target="_blank">https://docs.python.org/</a></li>
+          <li><a href="https://www.perplexity.ai/" target="_blank">https://www.perplexity.ai/</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
