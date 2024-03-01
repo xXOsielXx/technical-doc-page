@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -170,14 +171,30 @@ ul {
 }
 
 code {
+  position: relative;
   display: block;
   margin: 32px 0;
   padding: 4px;
   line-height: 32px;
-  overflow: auto;
 }
 code.console-code {
   background-color: black;
+}
+
+code button {
+  cursor: pointer;
+  float: right;
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+.copied-to-clipboard {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 16px 8px;
+  background-color: #111;
+  border: 1px solid #333;
 }
 
 code.text-editor-code {

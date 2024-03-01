@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Documentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
@@ -55,10 +56,14 @@
           <h2>Windows</h2>
           <ol>
             <li>Visit the <a href="https://www.python.org/downloads/windows" target="_blank">Windows downloads page in the Python website</a> and download the installer based on your local machine's hardware architecture.</li>
-            <li>Once downloaded, run the installer and follow the installation instruction</li>
+            <li>Once downloaded, run the installer and follow the installation instructions</li>
             <li>
               When the installation finishes, run the code below in order to know your python version (omitting the "$" symbol)
-              <code class="console-code">$ python --version</code>
+              <code class="console-code">
+                $ <span>python --version</span>
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
+              </code>
             </li>
           </ol>
         </article>
@@ -66,10 +71,14 @@
           <h2>Mac OS X</h2>
           <ol>
             <li>Visit the <a href="https://www.python.org/downloads/mac-osx" target="_blank">Mac OS X downloads page in the Python website</a> and download the installer based on your local machine's hardware architecture.</li>
-            <li>Once downloaded, run the installer and follow the installation instruction</li>
+            <li>Once downloaded, run the installer and follow the installation instructions</li>
             <li>
               When the installation finishes, run the code below in order to know your python version (omitting the "$" symbol)
-              <code class="console-code">$ python --version</code>
+              <code class="console-code">
+                $ <span>python --version</span>
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
+              </code>
             </li>
           </ol>
         </article>
@@ -78,18 +87,38 @@
           <ol>
             <li>
               Most of the Linux Distribution have python preinstalled in their system. In order to know what version of it you have, run the code below (omitting the "$" symbol)
-              <code class="console-code">$ which python3</code>
+              <code class="console-code">
+                $ <span>which python3</span>
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
+              </code>
             </li>
             <li>
               Anyway, you can install any version of python by running the following code (omitting the "$" symbol)
-              <code class="console-code">$ sudo apt install python</code>
-              <code class="console-code">$ sudo apt install python3</code>
+              <code class="console-code">
+                $ <span>sudo apt install python</span>
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
+              </code>
+              <code class="console-code">
+                $ <span>sudo apt install python3</span>
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
+              </code>
               Important: Make sure you install the correct python version, python2 or python3 that are very diferents, bear in mind.
             </li>
             <li>
               When the installation finishes, run the code below in order to know your python version (omitting the "$" symbol)
-              <code class="console-code">$ python --version</code>
-              <code class="console-code">$ python3 --version</code>
+              <code class="console-code">
+                $ <span>python --version</span>
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
+              </code>
+              <code class="console-code">
+                $ <span>python3 --version</span>
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
+              </code>
             </li>
           </ol>
         </article>
@@ -98,9 +127,17 @@
         <header>Hello World</header>
         <article>
           <p>To get started with Python, let's write your first program. The "Hello World" program. So, first of all, open your interpreter with the line of code below</p>
-          <code class="console-code">$ python</code>
+          <code class="console-code">
+          $ <span>python</span>
+          <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+          <div class="copied-to-clipboard">Text copied to clipboard!</div>
+          </code>
           <p>Already with the interpreter active, run the following line of code</p>
-          <code class="console-code">>>> print("Hello World")</code>
+          <code class="console-code">
+            >>> <span>print("Hello World")</span>
+            <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+            <div class="copied-to-clipboard">Text copied to clipboard!</div>
+          </code>
           <p>That's all, you have written your first program with python</p>
         </article>
       </section>
@@ -120,19 +157,27 @@
           </ul>
           <p>To create a variable in Python, simply assign a value to a name:</p>
           <code class="text-editor-code">
-            x = 5 <br>
-            y = "John"
+            <span>
+              x = 5 <br>
+              y = "John"
+            </span>
+            <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+            <div class="copied-to-clipboard">Text copied to clipboard!</div>
           </code>
           <p>You can also change the value of a variable during program execution:</p>
           <code class="text-editor-code">
             x = 5 <br>
             x = 10 <br>
             print(x)  # Output: 10
+            <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+            <div class="copied-to-clipboard">Text copied to clipboard!</div>
           </code>
           <p>To get the data type of a variable, you can use the type() function:</p>
           <code class="text-editor-code">
             x = 5 <br>
             print(type(x))  # Output: class 'int'
+            <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+            <div class="copied-to-clipboard">Text copied to clipboard!</div>
           </code>
         </article>
       </section>
@@ -162,6 +207,8 @@
             print(Constants.SPEED_OF_LIGHT_IN_VACUUM) <br>
             print(Constants.PI) <br>
             print(Constants.LUMINOUS_EFFICACY) <br>
+            <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+            <div class="copied-to-clipboard">Text copied to clipboard!</div>
           </code>
           <p>In the above example, we have created the Constants.py file which is called the Constants module. Then, we declared some constant values. After that, we create another Python file which is an Example.py file and in that file, we imported the Constants module using the import keyword. And finally, accessed the constant values. The intention of using capital letters is to tell other programmers that the variable should be treated as a constant</p>
         </article>
@@ -208,6 +255,8 @@
                 fruits = ["apple", "banana", "cherry"] <br>
                 for fruit in fruits: <br>
                     print(fruit)
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
               </code>
             </li>
             <li>
@@ -218,6 +267,8 @@
                 while count < 5: <br>
                     print(count) <br>
                     count += 1
+                <button class="code-copier"><span class="mdi mdi-content-copy"></span></button>
+                <div class="copied-to-clipboard">Text copied to clipboard!</div>
               </code>
             </li>
           </ul>
